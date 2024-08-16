@@ -8,8 +8,8 @@ DHTesp dht;
 AsyncWebServer server(80);
 
 // Define pins for the sensors
-const int soundSensorPin = 36;  // GPIO 36 (VP) for analog input (Sound Sensor)
-const int lightSensorPin = 39;  // GPIO 39 (VN) for analog input (Light Sensor)
+const int lightSensorPin = 36;  // GPIO 36 (VP) for analog input (Sound Sensor)
+const int soundSensorPin = 39;  // GPIO 39 (VN) for analog input (Light Sensor)
 
 String processor(const String& var) {
     float humidity = dht.getHumidity();
